@@ -24,9 +24,9 @@
 (def k2 82)
 (.delay (java.awt.Robot.) 1510)
 (defn tap-key [k]
-	(.keyPress (java.awt.Robot.) k)
-	(.keyRelease (java.awt.Robot.) k)
-	1)
+  (.keyPress (java.awt.Robot.) k)
+  (.keyRelease (java.awt.Robot.) k)
+  1)
 
 ; don't forget to call the function :)
 (tap-key k2)
@@ -35,15 +35,15 @@
 (.delay (java.awt.Robot.) 1560)
 
 (defn pressk [k]
-	(.keyPress (java.awt.Robot.) k))	
+  (.keyPress (java.awt.Robot.) k))	
 (defn releasek [k]
-	(.keyRelease (java.awt.Robot.) k))
+  (.keyRelease (java.awt.Robot.) k))
 
 (defn multi-key [& kl] 
-	(run! pressk kl)
-	(run! releasek kl)
-	1)
+  (run! pressk kl)
+  (run! releasek kl)
+  1)
 (multi-key 17 67)
-	
+
 
 
