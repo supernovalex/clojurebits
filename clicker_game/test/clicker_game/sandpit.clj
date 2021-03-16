@@ -15,5 +15,5 @@
 
 (defn leggo []
   (keyp 100 18 9)
-  (gettwo)
+  (getone)
   1)
