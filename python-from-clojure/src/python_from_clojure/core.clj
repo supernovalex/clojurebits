@@ -1,11 +1,8 @@
 (ns python-from-clojure.core
-  (:require
-    [libpython-clj2.python :as py :refer [py. py.. py.-]]
-    [libpython-clj2.require :refer [require-python]]))
-
-(require-python '[opencv])
+  (:require [libpython-clj.python :as py :refer [py. py.. py.-]]))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
+  (py/initialize! :python-executable "C:\\Users\\Alex123\\anaconda3\\python.exe"
+                  :library-path "C:\\Users\\Alex123\\anaconda3\\python3.dll")
   (println "Hello, World!"))
