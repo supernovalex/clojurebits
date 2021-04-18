@@ -1,0 +1,11 @@
+(ns another-test.core
+  (:gen-class))
+
+(defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, World!"))
+
+(println "yaya")
+
+(range 1 5)

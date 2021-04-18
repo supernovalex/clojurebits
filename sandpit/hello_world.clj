@@ -1,3 +1,3 @@
-(defn hw 
-  []
-  (println "wowawee"))
+; this is a hello world program
+
+(println "wicked cool")
