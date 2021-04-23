@@ -1,6 +1,6 @@
 ; remember! only the final line will be output from this script
 
-; to force printing of resutls - need println, like on l23
+; to force printing of resutls - need println
 
 ; on second thoughts, this is nothing to do with sequences
 
