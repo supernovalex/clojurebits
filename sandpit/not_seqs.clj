@@ -15,6 +15,7 @@
 ; first
 ; rest
 ; last
+; type
 
 ; examples
 (def n (range 1 11))
@@ -25,3 +26,5 @@
 (nth n 3) ; => 4
 
 ; why 4? indexed at zero :(
+
+(type 3) ; => java.lang.Long
