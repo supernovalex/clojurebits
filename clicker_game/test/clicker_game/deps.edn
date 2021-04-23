@@ -1,4 +1,0 @@
-{:mvn/repos
-  {"vendredi" {:url "https://repository.hellonico.info/repository/hellonico/"}}
-  :deps
-  { origami {:mvn/version "4.3.0-8"}}

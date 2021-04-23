@@ -1,0 +1,26 @@
+;; reload function is (rload)
+
+(defn testit
+  []
+  (println "test works"))
+
+;; this is awesome
+
+;; control flow
+;; if
+(if true
+  (println "this will evaluate, because it's true!")
+  (println "this won't, it's not false!"))
+
+;; if-else
+(if false
+  (do (println "not this")
+      (println "or this, because there's an else"))
+  (do (println "definitely this")
+      (println "and this! because there is a do!")))
+
+;; when
+(when true
+  (println "huzzah!"))
+
+;; 
