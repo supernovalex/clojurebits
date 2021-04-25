@@ -1,0 +1,7 @@
+;; this is gold, do not lose :/
+
+(ns my-py-clj.config
+  (:require [libpython-clj.python :as py]))
+
+(py/initialize! :python-executable "C://Program Files//python//python.exe"
+                :library-path "C://Program Files//python//python39.dll")
