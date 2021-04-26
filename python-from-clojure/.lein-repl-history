@@ -1,0 +1,5 @@
+(load-file "reqs.clj")
+(require '[libpython-clj.require :refer [require-python]])
+exit
+(require '[libpython-clj2.python])
+exit()

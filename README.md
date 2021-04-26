@@ -30,25 +30,29 @@ git
 
 * __Step 0__ Install python, pip (if you wish), and all the desired libraries (numpy is needed to follow these steps).
 
-* __Step 1__ Create a project the usual way, with `lein new app ***`.
+* __Step 1__ Create a project the usual way, with: 
 
-* __Step 2__ Add the following to the dependencies in `project.clj`:
+`lein new app libpytest`
+
+* __Step 2__ Add the following to the dependencies in `libpytest/project.clj`:
 
 `[clj-python/libpython-clj "2.00-beta]`
 
 The documentation is erratic, so check for the latest version here: https://clojars.org/clj-python/libpython-clj.
 
-* __Step 3__ Create a new file, `ns.clj`, and include only the following:
+* __Step 3__ Create a new file, `libpytest/ns.clj`, and include only the following:
 
-`(ns my-py-clj.config
-  (:require [libpython-clj2.python :as py]))
+```(ns my-py-clj.config 
+ (:require [libpython-clj2.python :as py]))
 
-(py/initialize! :python-executable "C://Program Files//python    //python.exe"
-                :library-path "C://Program Files//python//pyt    hon39.dll")`
+(py/initialize! :python-executable "C://Program Files//python//python.exe"
+                :library-path "C://Program Files//python//python39.dll") ```
 
 Naturally, modify the paths to the python executable file and the library file to the system.
 
-* __Step 4__ Run the repl with `lein repl`.
+* __Step 4__ Run the repl with: 
+
+`lein repl`.
 
 * __Step 5__ Inside the repl, load the namespace file by running: 
 
@@ -60,14 +64,12 @@ Naturally, modify the paths to the python executable file and the library file t
 
 * __Step 7__ Load any desired libraries with similar:
 
-`user=> (require-python '[numpy :as np])
+`user=> (require-python '[numpy :as np])`
 
 * __Step 8__ Call python functions with the following syntax:
 
 `user=> (np/mean [1 2 3 4])`
 
-* __Step 9__ ???
-
 # Next steps
 
-Save more of the abvoe into a config file which can be run automatically on repl startup. 
+- [ ] Save the the above in a config file which can be run automatically on repl startup. 
