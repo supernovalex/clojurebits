@@ -42,11 +42,13 @@ The documentation is erratic, so check for the latest version here: https://cloj
 
 * __Step 3__ Create a new file, `libpytest/ns.clj`, and include only the following:
 
-```(ns my-py-clj.config 
+```
+(ns my-py-clj.config 
  (:require [libpython-clj2.python :as py]))
 
 (py/initialize! :python-executable "C://Program Files//python//python.exe"
-                :library-path "C://Program Files//python//python39.dll") ```
+                :library-path "C://Program Files//python//python39.dll")
+```
 
 Naturally, modify the paths to the python executable file and the library file to the system.
 
