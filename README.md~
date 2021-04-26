@@ -40,7 +40,7 @@ __Step 2__
 
 Add the following to the dependencies in `libpytest/project.clj`:
 
-`[clj-python/libpython-clj "2.00-beta-14"]`
+`[clj-python/libpython-clj "2.00-beta]`
 
 The documentation is erratic, so check for the latest version here: https://clojars.org/clj-python/libpython-clj.
 
