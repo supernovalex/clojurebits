@@ -28,19 +28,25 @@ git
 
 # libpython-clj setup with leiningen for complete plonkers
 
-__Step 0__ Install python, pip (if you wish), and all the desired libraries (numpy is needed to follow these steps).
+__Step 0__
 
-__Step 1__ Create a project the usual way, with: 
+Install python, pip (if you wish), and all the desired libraries (numpy is needed to follow these steps).
 
-`lein new app libpytest`
+__Step 1__
 
-__Step 2__ Add the following to the dependencies in `libpytest/project.clj`:
+Create a project the usual way, with: `lein new app libpytest`
+
+__Step 2__
+
+Add the following to the dependencies in `libpytest/project.clj`:
 
 `[clj-python/libpython-clj "2.00-beta]`
 
 The documentation is erratic, so check for the latest version here: https://clojars.org/clj-python/libpython-clj.
 
-__Step 3__ Create a new file, `libpytest/ns.clj`, and include only the following:
+__Step 3__
+
+Create a new file, `libpytest/ns.clj`, and include only the following:
 
 ```
 (ns my-py-clj.config 
@@ -52,25 +58,25 @@ __Step 3__ Create a new file, `libpytest/ns.clj`, and include only the following
 
 Naturally, modify the paths to the python executable file and the library file to the system.
 
-__Step 4__ Run the repl with: 
+__Step 4__
 
-`lein repl`.
+Run the repl with: `lein repl`.
 
-__Step 5__ Inside the repl, load the namespace file by running: 
+__Step 5__
 
-`user=> (load-file "ns.clj")`.
+Inside the repl, load the namespace file by running: `user=> (load-file "ns.clj")`.
 
-__Step 6__ Require libpython-clj with: 
+__Step 6__
 
-`user=> (require '[libpython-clj2.require :refer [require-python]])`
+Require libpython-clj with: `user=> (require '[libpython-clj2.require :refer [require-python]])`
 
-__Step 7__ Load any desired libraries with similar:
+__Step 7__
 
-`user=> (require-python '[numpy :as np])`
+Load any desired libraries with similar: `user=> (require-python '[numpy :as np])`
 
-__Step 8__ Call python functions with the following syntax:
+__Step 8__
 
-`user=> (np/mean [1 2 3 4])`
+Call python functions with the following syntax: `user=> (np/mean [1 2 3 4])`
 
 # Next steps
 
