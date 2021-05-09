@@ -1,0 +1,14 @@
+; first function
+(defn unsure
+  "prints the string if present, else returns 'Oops!'"
+  ([arg1]
+   (println arg1))
+  ([]
+   (println "Oops!")))
+
+; second function
+(defn mean
+  "calculates arithmetic mean and prints"
+  [s]
+  (/ (reduce + s) (count s)))
+

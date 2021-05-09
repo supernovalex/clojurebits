@@ -84,3 +84,5 @@ message
 
 ; you can also treat a map like a function to find a key
 (story :beginning)
+
+(println "~~~~~~~~~~ Part 3 ~~~~~~~~~~~~")

@@ -57,13 +57,13 @@ message
 ; maps are cool in clojure
 {} ; this one is empty (it's a literal too)
 
-{:first-name "Ben"
- :last-name "Dover"} ; this is a populated one
+{:first-name "Sam"
+ :last-name "Ovar"} ; this is a populated one
 
 (def story {:beginning {:ch1 "hello" :ch2 "there"}
             :middle {:ch1 "general" :ch2 "kenobi"}
             :end {:ch1 "a surprise" :ch2 "to be sure"}})
-; this is a nested map nested maps
+; this is a nested nested map map 
 
 ; the nested map prints awfully so 
 
