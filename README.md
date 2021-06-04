@@ -4,7 +4,7 @@ Dabbling in clojure
 # Books
 Clojure applied ~ Ben Vandgrift & Alex Miller
 
-Clojure for the brave and true ~ Daniel Higginbotham
+~~Clojure for the brave and true ~ Daniel Higginbotham~~
 
 Practical vim ~ Drew Neil
 

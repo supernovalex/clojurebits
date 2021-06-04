@@ -20,7 +20,7 @@
              })
 
   (def murs {:name "murs" ; linguistic designation
-             :moons 2 ; orbiting bodies
+             :moons #{:phobos :deimos} ; orbiting bodies
              :size "small" ; relative to other solar bodies
              :type :planet ; entity type
              })
